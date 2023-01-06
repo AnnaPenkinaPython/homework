@@ -11,3 +11,7 @@ def load_questions(path):
         questions_info = json.loads(question_content)
         return questions_info
 
+def get_questions(questions):
+
+    for question in questions:
+        return question["q"]
