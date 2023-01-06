@@ -1,0 +1,13 @@
+import os
+import json
+
+PATH_TO_QUESTIONS = os.path.join('questions.json')
+
+
+def load_questions(path):
+
+    with open(path, 'r') as file:
+        question_content = file.read()
+        questions_info = json.loads(question_content)
+        return questions_info
+
