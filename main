@@ -7,7 +7,6 @@ if __name__ == '__main__':
     filename = 'questions.json'
 
 PATH_TO_QUESTIONS = os.path.join('questions.json')
-loaded_questions = load_questions
 questions = load_questions(PATH_TO_QUESTIONS)
 
 
